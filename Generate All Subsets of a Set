@@ -1,0 +1,5 @@
+def generate_subsets(lst):
+    subsets = [[]]
+    for num in lst:
+        subsets += [curr + [num] for curr in subsets]
+    return subsets
